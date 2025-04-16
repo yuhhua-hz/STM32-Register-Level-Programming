@@ -1,0 +1,14 @@
+# Configuración por defecto: Git decide automáticamente
+* text=auto
+
+# Mantener el formato original de los archivos importantes
+Src/*.c -text
+Inc/*.h -text
+
+# Marcar archivos binarios
+*.elf binary
+*.bin binary
+*.hex binary
+*.map binary
+
+
