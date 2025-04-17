@@ -1,14 +1,20 @@
-# Configuración por defecto: Git decide automáticamente
-* text=auto
+* text=auto eol=crlf
 
-# Mantener el formato original de los archivos importantes
-Src/*.c -text
-Inc/*.h -text
+##### Language
+*.c    text eol=crlf
+*.h    text eol=crlf
 
-# Marcar archivos binarios
+###### Git
+.gitattributes text eol=crlf
+.gitignore text eol=crlf
+.editorconfig text eol=crlf
+
+###### Binary
+*.out binary
+*.obj binary
+*.map binary
+*.d binary
 *.elf binary
 *.bin binary
 *.hex binary
 *.map binary
-
-
